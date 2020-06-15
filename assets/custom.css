@@ -3,8 +3,9 @@ body, ul, li, h1, h3, p, a {
     padding: 0;
     list-style: none;
     font-size: 1rem;
+    font-weight: 300;
     font-family: 'Roboto', sans-serif;
-    box-sizing: content-box
+    box-sizing: content-box;
 }
 
 a {
@@ -16,20 +17,34 @@ h1 {
     font-size: 32px;
     font-weight: 400;
     padding: 30px 30px 00;
+    color: #575757;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: 300;
+    padding: 10px 30px;
 }
 
 h3 {
     font-size: 20px;
-    font-weight: 300;
+    font-weight: 400;
     padding: 20px 30px;
 }
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
 #bold {
     font-weight: bolder;
 }
+
 :root {
     --bg-button: #EF3A5D;
     --bg-hover-button: #EC1740;
-    --ftsize-button: font-weight 300, font-size: 14px;
+    --ftsize-button: font-size: 14px;
     --color-button: #FFFFFF;
     --font-button: font-family: 'Roboto', sans-serif;
 }
@@ -57,18 +72,19 @@ h3 {
     display: flex;
     align-content: flex-start;
     justify-content: space-between;
-
 }
 
 .menu li, .login li {
     display: inline-flex ;
     margin-left: 10px;
 }
+
 .menu li a, .login li a {
     display: block;
     padding: 10px;
     height: 40px;
 }
+
 a:hover {
     border-bottom: 2px solid #EC1740;    
 }
@@ -102,6 +118,7 @@ a:hover {
     color: var(--color-button);
     font-size: var(--ftsize-button);
     font-family: var(--font-button);
+    font-weight: 300;
     border-radius: 5px;
     border: none;
     margin-left: 30px;
@@ -128,4 +145,39 @@ a:hover {
 
 .luciano {
     text-align: right;
+}
+
+/* SECTION 2 */
+
+
+#title-about {
+    text-align: center;
+    padding: 50px;
+}
+
+.about-us {
+    display: flex;
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about-us div {
+    flex: 1 1 300px;
+}
+
+.about-us img {
+    margin: 0 auto;
+}
+
+.about-us p {
+    padding: 15px 30px;
+}
+
+/* HR */
+
+#hr {
+  width: 1110px;
+  margin: 50px auto;
+  opacity: 0.8;
 }
