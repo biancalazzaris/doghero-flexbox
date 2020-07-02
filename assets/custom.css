@@ -59,13 +59,13 @@ img {
     height: 93px;
 }
 
-.header img {
+.logo {
     max-width: 100%;
     padding-left: 70px;
     padding-top: -15px;
 }
 
-.barra-menu {
+.nav {
     width: 80%;
     padding-right: 30px;
     padding-top: 30px;
@@ -91,7 +91,7 @@ a:hover {
 
 /*SECTION-1*/
 
-.section-1 {
+.section1 {
     height: 480px;
     background-image: url(./images/banner-doghero-como-funciona.jpg);
     background-repeat: none;
@@ -110,6 +110,9 @@ a:hover {
     align-self: center;
     margin-right: 100px;
 }
+.banner-about button {
+    margin-left: 30px;
+}
 
 .button {
     width: 180px;
@@ -121,8 +124,7 @@ a:hover {
     font-weight: 300;
     border-radius: 5px;
     border: none;
-    margin-left: 30px;
-    
+    margin-bottom: 20px;
 }
 
 .button:hover {
@@ -130,7 +132,7 @@ a:hover {
     cursor: pointer;
 }
 
-.legenda {
+.subtitle {
     color: #FFFFFF;
     font-weight: 300;
     display: flex;
@@ -143,14 +145,14 @@ a:hover {
     text-align: left;
 }
 
-.luciano {
+.photo-credit {
     text-align: right;
 }
 
 /* SECTION 2 */
 
 
-#title-about {
+.title {
     text-align: center;
     padding: 50px;
 }
@@ -180,4 +182,105 @@ a:hover {
   width: 1110px;
   margin: 50px auto;
   opacity: 0.8;
+}
+
+/* SECTION 3 */
+
+.section3 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;   
+}
+
+.phone, .card, .evaluate {
+    width: 700px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+}
+
+.phone h3, .card h3, .evaluate h3{
+    margin-left: 30px;
+    padding: 0;
+}
+
+.phone p, .card p, .evaluate p {
+    margin-left: 30px;
+    padding-top: 10px;
+}
+
+.phone img, .card img, .evaluate img {
+    width: 180px;
+}
+
+.button-section3 {
+    width: 700px;
+    height: 100px;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+}
+
+
+/* SECTION 4  */
+
+
+.section4 {
+    background-color: #F0F1F1;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;   
+}
+
+.section4 h1{
+    width: 100%;
+}
+
+.vet, .hero {
+    width: 500px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.vet img, .hero img {
+    width: 150px;
+}
+
+
+/* ajustar as bordas do texto e da div depois só copiar e colar, não fiz media do section2 pra baixo ainda */
+
+
+
+
+@media (max-width: 600px) {
+
+.barra-menu {
+    display: none;
+}
+
+.logo {
+    margin: 0 auto;
+    padding: 0;
+}
+
+.section-1 {
+    background-repeat: none;
+    background-size: cover;
+}
+
+.txt{
+    display: none;
+}
+
+.about-us {
+    width: 100%;
+    flex-direction: column;
+}
+
+#hr {
+    width: 80%;
+}
+
 }
