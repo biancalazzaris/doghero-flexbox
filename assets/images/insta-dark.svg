@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+    <defs>
+        <linearGradient id="a" x1="66.814%" x2="98.343%" y1="-10.507%" y2="111.451%">
+            <stop offset="0%" stop-color="#4E60D3"/>
+            <stop offset="14.276%" stop-color="#913BAF"/>
+            <stop offset="76.146%" stop-color="#D52D88"/>
+            <stop offset="100%" stop-color="#F26D4F"/>
+        </linearGradient>
+        <circle id="b" cx="12" cy="12" r="12"/>
+        <radialGradient id="c" cx="30.274%" cy="100%" r="124.486%" fx="30.274%" fy="100%" gradientTransform="matrix(.63513 .39934 -.1991 .6598 .31 .22)">
+            <stop offset="0%" stop-color="#FED276"/>
+            <stop offset="17.024%" stop-color="#FDBD61" stop-opacity=".975"/>
+            <stop offset="45.408%" stop-color="#F6804D"/>
+            <stop offset="100%" stop-color="#E83D5C" stop-opacity="0"/>
+        </radialGradient>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <circle cx="12" cy="12" r="12" fill="url(#a)" fill-rule="nonzero"/>
+        <mask id="d" fill="#fff">
+            <use xlink:href="#b"/>
+        </mask>
+        <use fill="url(#a)" fill-rule="nonzero" xlink:href="#b"/>
+        <path fill="url(#c)" d="M23.818 19.908C23.217 22.437 21.172 24 18.28 24H5.72C2.25 24 0 21.75 0 18.281V8.37a21.64 21.64 0 0 1 6.117-.87c9.006 0 16.457 5.392 17.7 12.408z" mask="url(#d)"/>
+        <g fill="#FFF">
+            <g transform="translate(3.656 3.656)">
+                <path fill-rule="nonzero" d="M1.563 4.825v7.038A3.245 3.245 0 0 0 4.8 15.116h7.09a3.245 3.245 0 0 0 3.235-3.253V4.825a3.245 3.245 0 0 0-3.236-3.254H4.8a3.245 3.245 0 0 0-3.236 3.254zm-1.541 0C.022 2.172 2.161.022 4.799.022h7.09c2.637 0 4.776 2.15 4.776 4.803v7.038c0 2.652-2.138 4.802-4.777 4.802H4.8c-2.638 0-4.777-2.15-4.777-4.802V4.825z"/>
+                <path fill-rule="nonzero" d="M8.366 12.814c-2.42 0-4.381-1.971-4.381-4.404 0-2.432 1.961-4.404 4.38-4.404 2.42 0 4.382 1.972 4.382 4.404 0 2.433-1.962 4.404-4.381 4.404zm0-1.549a2.848 2.848 0 0 0 2.84-2.855 2.848 2.848 0 0 0-2.84-2.855 2.848 2.848 0 0 0-2.84 2.855 2.848 2.848 0 0 0 2.84 2.855z"/>
+                <ellipse cx="12.791" cy="3.895" rx="1.057" ry="1.062"/>
+            </g>
+        </g>
+    </g>
+</svg>

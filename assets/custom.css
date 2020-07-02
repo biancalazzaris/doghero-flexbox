@@ -1,4 +1,4 @@
-body, ul, li, h1, h3, p, a {
+body, ul, li, h1, h3, a {
     margin: 0;
     padding: 0;
     list-style: none;
@@ -8,9 +8,16 @@ body, ul, li, h1, h3, p, a {
     box-sizing: content-box;
 }
 
+p {
+    opacity: 0.8;
+    margin: 0;
+    padding: 0;
+}
+
 a {
     text-decoration: none;
     color: #525357 ;
+    opacity: 0.8;
 }
 
 h1 {
@@ -24,12 +31,14 @@ h2 {
     font-size: 20px;
     font-weight: 300;
     padding: 10px 30px;
+    opacity: 0.8;
 }
 
 h3 {
     font-size: 20px;
     font-weight: 400;
-    padding: 20px 30px;
+    padding: 10px 0;
+    opacity: 0.8;
 }
 
 img {
@@ -85,7 +94,7 @@ img {
     height: 40px;
 }
 
-a:hover {
+.menu a:hover {
     border-bottom: 2px solid #EC1740;    
 }
 
@@ -110,6 +119,7 @@ a:hover {
     align-self: center;
     margin-right: 100px;
 }
+
 .banner-about button {
     margin-left: 30px;
 }
@@ -151,7 +161,6 @@ a:hover {
 
 /* SECTION 2 */
 
-
 .title {
     text-align: center;
     padding: 50px;
@@ -190,6 +199,7 @@ a:hover {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;   
+    flex: 1 1 300px;
 }
 
 .phone, .card, .evaluate {
@@ -199,31 +209,21 @@ a:hover {
     align-items: center;
 }
 
-.phone h3, .card h3, .evaluate h3{
-    margin-left: 30px;
-    padding: 0;
-}
-
-.phone p, .card p, .evaluate p {
-    margin-left: 30px;
-    padding-top: 10px;
-}
-
 .phone img, .card img, .evaluate img {
     width: 180px;
+    margin-right: 30px;
 }
 
-.button-section3 {
+.button3 {
     width: 700px;
     height: 100px;
     display: flex;
     align-self: center;
     justify-content: center;
+    padding: 30px;
 }
 
-
 /* SECTION 4  */
-
 
 .section4 {
     background-color: #F0F1F1;
@@ -236,42 +236,133 @@ a:hover {
     width: 100%;
 }
 
-.vet, .hero {
+.vet, .hero, .details, .photos {
     width: 500px;
     height: 150px;
     display: flex;
     justify-content: center;
-
+    padding-top: 20px;
 }
 
-.vet img, .hero img {
-    width: 150px;
+.vet img, .hero img, .details img, .photos img {
+    width: 160px;
 }
 
+.txt-format {
+    padding-top: 20px;
+}
 
-/* ajustar as bordas do texto e da div depois só copiar e colar, não fiz media do section2 pra baixo ainda */
+/* FOOTER */
 
+.footer {
+    background-color: #F0F1F1;
+}
 
+.menu-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
+.menu-footer div {
+    padding: 30px;
+}
+
+.menu-footer ul{
+    padding: 5px 0;
+}
+
+.menu-footer a:hover {
+    text-decoration: underline;
+}
+
+.out-more img {
+    display: inline;
+    padding: 0 3px ;
+    list-style: none;
+}
+
+/* FORMS  */
+
+.last-div {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 1000px;
+    justify-content: space-around;
+    padding-bottom: 50px;
+}
+
+.newslatter {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.div-forms {
+    display: flex;
+    flex-wrap: wrap;
+    border: grey 2px solid;
+    border-radius: 3px;
+    height: 40px;
+    width: 250px;
+}
+
+.div-forms img {
+    padding: 5px;
+}
+
+.div-forms input {
+    border: none;
+    background-color: transparent;
+    width: 200px;
+    font-size: 16px;
+}
+
+.submit {
+    background-color: var(--bg-button);
+    color: var(--color-button);
+    font-size: 16px;
+    font-family: var(--font-button);
+    font-weight: 400;
+    border-radius: 4px;
+    border: none;
+    padding: 10px 15px;
+    margin: 0 20px ;
+}
+
+.idiom img {
+    border: 2px solid grey;
+    border-radius: 3px;
+}
+
+/* MEDIA */
 
 @media (max-width: 600px) {
 
-.barra-menu {
+.menu,.login {
     display: none;
 }
 
 .logo {
     margin: 0 auto;
-    padding: 0;
+    padding: 10px 0;
 }
 
-.section-1 {
+.section1 {
     background-repeat: none;
     background-size: cover;
 }
 
+h2 {
+    font-size: 100%;
+}
+
 .txt{
     display: none;
+}
+
+#hr {
+    width: 80%;
 }
 
 .about-us {
@@ -279,8 +370,29 @@ a:hover {
     flex-direction: column;
 }
 
-#hr {
-    width: 80%;
+.phone, .card, .evaluate, .vet, .hero, .details, .photos {
+    margin: 60px 0;
+    flex-direction: column;
+    max-width: 400px;    
+}
+
+.vet img, .hero img, .details img, .photos img {
+    display: flex;
+    align-self: center;
+}
+
+.menu-footer, .last-div {
+    flex-direction: column;
+}
+
+#hr-footer {
+    width: 150px;
+    margin: 10px 0; 
+}
+
+.forms, .idiom {
+    flex-direction: column;
+    padding: 30px;
 }
 
 }
